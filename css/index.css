@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: montserrat, arial;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: Montserrat;
+}
+header {
+  width: 1920px;
+  height: 1056px;
+  background: linear-gradient(rgba(239, 237, 228, 0.38), rgba(239, 237, 228, 0.38)), url(../img/kindness.jpg);
+}
+header .titlearea {
+  display: flex;
+  width: 1920px;
+  flex-direction: row;
+  padding-top: 38px;
+}
+header .titlearea .title {
+  width: 1920px;
+  height: 72px;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+  padding-left: 350px;
+}
+header .titlearea .signinbutton {
+  text-decoration: none;
+  width: 179px;
+  height: 60px;
+  box-shadow: 0 3px 6px 0 #000000;
+  background-color: #8e8d8a;
+  font-size: 3rem;
+  color: #ffffff;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 60px;
+  margin-right: 9.5px;
+  margin-top: 5px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+header .titlearea .signupbutton {
+  text-decoration: none;
+  width: 179px;
+  height: 60px;
+  box-shadow: 0 3px 6px 0 #000000;
+  background-color: #dccab0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #707070;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 9.5px;
+  margin-right: 51px;
+  margin-top: 5px;
+  font-family: Montserrat;
+}
+header nav {
+  text-align: center;
+  font-size: 30px;
+  height: 37px;
+  margin-top: -15px;
+}
+header nav a {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+header .lightened-area {
+  width: 1829px;
+  height: 413px;
+  background-color: rgba(255, 255, 255, 0.47);
+  margin-top: 375px;
+}
+header .lightened-area .intro {
+  font-size: 50px;
+  margin-left: 375px;
+  padding-top: 150px;
+}
+header .lightened-area .findoutmorebutton {
+  margin-left: 1500px;
+  margin-top: 60px;
+}
+header .lightened-area .findoutmorebutton .fombutton {
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #dccab0;
+  border-radius: 25px;
+  font-size: 30px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.62);
+  font-weight: bold;
+  color: #ffffff;
+}
+section .pinkbar {
+  background-color: #f6cfca;
+  width: 1920px;
+  height: 120px;
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+}
+section .content {
+  width: 1920px;
+  height: 934px;
+  background-color: #eceae0;
+  display: flex;
+}
+section .content .handsimg {
+  background-color: #eceae0;
+  margin-top: 95px;
+  margin-left: 123px;
+}
+section .content .contentinside {
+  width: 822px;
+  height: 677px;
+  font-size: 36px;
+  margin-top: 112px;
+  margin-left: 140px;
+  line-height: 44px;
+}
+section .content .contentinside h3 {
+  font-weight: bold;
+}
+section .content .contentinside h4 {
+  font-weight: 900;
+  font-style: italic;
+}
+section .content .contentinside .bktbutton {
+  margin-top: 130px;
+  margin-left: 350px;
+}
+section .content .contentinside .bktbutton .bekindtodaybutton {
+  border-radius: 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.62);
+  background-color: #dccab0;
+  text-align: center;
+  padding: 10px 39px;
+}
+section .content .contentinside .bktbutton a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+footer {
+  width: 1920px;
+  height: 113px;
+  background-color: #f6cfca;
+  border-left: 1px solid #707070;
+  border-right: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+footer p {
+  text-align: center;
+  color: #707070;
+  font-size: 20px;
+  padding-top: 50px;
+}
