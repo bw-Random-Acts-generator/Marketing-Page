@@ -1,3 +1,28 @@
+.button-style {
+  text-decoration: none;
+  width: 179px;
+  height: 60px;
+  box-shadow: 0 3px 6px 0 #000000;
+  font-size: 3em;
+  font-weight: bold;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 60px;
+}
+.buttonat1315 {
+  font-size: 2rem;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+}
+.buttonat1000 {
+  font-size: 1.8rem;
+  border-radius: 15px;
+  width: 120px;
+  height: 35px;
+  line-height: 36px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +154,7 @@ table {
 * {
   box-sizing: border-box;
   font-family: montserrat, arial;
+  font-size: 62.5%;
 }
 html {
   font-size: 62.5%;
@@ -138,62 +164,166 @@ body {
   font-family: Montserrat;
 }
 header {
-  width: 1920px;
+  width: 100%;
   height: 1056px;
   background: linear-gradient(rgba(239, 237, 228, 0.38), rgba(239, 237, 228, 0.38)), url(../img/kindness.jpg);
 }
+@media (max-width: 1315px) {
+  header {
+    width: 1315px;
+    height: 723px;
+    background-size: contain;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    width: 1000px;
+    height: 550px;
+    background-size: contain;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+    height: 270px;
+  }
+}
+@media (max-width: 1315px) {
+  header .pinkbar {
+    width: 1315px;
+  }
+}
+@media (max-width: 1000px) {
+  header .pinkbar {
+    width: 1000px;
+  }
+}
+@media (max-width: 500px) {
+  header .pinkbar {
+    width: 500px;
+    height: 15%;
+    background-color: #f6cfca;
+    padding-bottom: 10%;
+  }
+}
 header .titlearea {
   display: flex;
-  width: 1920px;
+  width: 100%;
   flex-direction: row;
   padding-top: 38px;
 }
 header .titlearea .title {
-  width: 1920px;
-  height: 72px;
-  font-family: Montserrat;
-  font-size: 50px;
+  width: 100%;
+  font-size: 5rem;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.22;
-  letter-spacing: normal;
   color: #000000;
   text-align: center;
-  padding-left: 350px;
+  padding-left: 18.2%;
+}
+@media (max-width: 1315px) {
+  header .titlearea .title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1000px) {
+  header .titlearea .title {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  header .titlearea .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: -80px;
+    padding-right: 40px;
+    margin-left: -25px;
+  }
 }
 header .titlearea .signinbutton {
   text-decoration: none;
   width: 179px;
   height: 60px;
   box-shadow: 0 3px 6px 0 #000000;
-  background-color: #8e8d8a;
-  font-size: 3rem;
-  color: #ffffff;
+  font-size: 3em;
+  font-weight: bold;
   border-radius: 25px;
   text-align: center;
   line-height: 60px;
+  background-color: #8e8d8a;
+  color: #ffffff;
   margin-right: 9.5px;
   margin-top: 5px;
-  font-family: Montserrat;
-  font-weight: bold;
+}
+@media (max-width: 1315px) {
+  header .titlearea .signinbutton {
+    font-size: 2rem;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  header .titlearea .signinbutton {
+    font-size: 1.8rem;
+    border-radius: 15px;
+    width: 120px;
+    height: 35px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 500px) {
+  header .titlearea .signinbutton {
+    display: none;
+  }
+}
+header .titlearea .signinbutton:hover {
+  background-color: black;
 }
 header .titlearea .signupbutton {
   text-decoration: none;
   width: 179px;
   height: 60px;
   box-shadow: 0 3px 6px 0 #000000;
-  background-color: #dccab0;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: bold;
-  color: #707070;
   border-radius: 25px;
   text-align: center;
   line-height: 60px;
+  background-color: #dccab0;
+  color: #707070;
   margin-left: 9.5px;
   margin-right: 51px;
   margin-top: 5px;
-  font-family: Montserrat;
+}
+@media (max-width: 1315px) {
+  header .titlearea .signupbutton {
+    font-size: 2rem;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 1000px) {
+  header .titlearea .signupbutton {
+    font-size: 1.8rem;
+    border-radius: 15px;
+    width: 120px;
+    height: 35px;
+    line-height: 36px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header .titlearea .signupbutton {
+    display: none;
+  }
+}
+header .titlearea .signupbutton:hover {
+  background-color: black;
+  color: white;
 }
 header nav {
   text-align: center;
@@ -201,62 +331,274 @@ header nav {
   height: 37px;
   margin-top: -15px;
 }
+@media (max-width: 1315px) {
+  header nav {
+    font-size: 2rem;
+    margin-left: -5%;
+  }
+}
+@media (max-width: 1000px) {
+  header nav {
+    font-size: 1.6rem;
+    margin-top: 1px;
+    margin-left: -35px;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    font-size: 1rem;
+    margin-top: -48px;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #000000;
   margin-left: 55px;
   margin-right: 55px;
 }
+@media (max-width: 1000px) {
+  header nav a {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 header .lightened-area {
-  width: 1829px;
+  width: 95.3%;
   height: 413px;
   background-color: rgba(255, 255, 255, 0.47);
-  margin-top: 375px;
+  margin-top: 390px;
+}
+@media (max-width: 1315px) {
+  header .lightened-area {
+    height: 300px;
+    width: 95%;
+    margin-top: 250px;
+  }
+}
+@media (max-width: 1000px) {
+  header .lightened-area {
+    height: 40%;
+    margin-top: 150px;
+  }
+}
+@media (max-width: 500px) {
+  header .lightened-area {
+    height: 100px;
+    width: 93%;
+    margin-top: 10%;
+    padding-top: 100px;
+  }
 }
 header .lightened-area .intro {
+  width: 85%;
+  height: 150px;
   font-size: 50px;
-  margin-left: 375px;
+  margin-top: 150px;
+  margin-left: 210px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 60px;
   padding-top: 150px;
 }
+@media (max-width: 1315px) {
+  header .lightened-area .intro {
+    width: 75%;
+    height: 100px;
+    font-size: 3rem;
+    margin-top: 100px;
+    line-height: 40px;
+    margin-left: 200px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  header .lightened-area .intro {
+    font-size: 2.5rem;
+    margin-top: 75px;
+    margin-left: 150px;
+    line-height: 35px;
+    width: 83%;
+  }
+}
+@media (max-width: 500px) {
+  header .lightened-area .intro {
+    width: 90%;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 15px;
+    margin-top: -65px;
+    margin-left: 40px;
+    padding-top: 0px;
+  }
+}
 header .lightened-area .findoutmorebutton {
-  margin-left: 1500px;
-  margin-top: 60px;
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 3%;
+  padding-top: 100px;
+}
+@media (max-width: 1315px) {
+  header .lightened-area .findoutmorebutton {
+    margin-left: 1000px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  header .lightened-area .findoutmorebutton {
+    margin-left: 700px;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 500px) {
+  header .lightened-area .findoutmorebutton {
+    display: none;
+  }
 }
 header .lightened-area .findoutmorebutton .fombutton {
   padding: 15px 30px;
   text-decoration: none;
   background-color: #dccab0;
   border-radius: 25px;
-  font-size: 30px;
+  font-size: 3rem;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.62);
   font-weight: bold;
   color: #ffffff;
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 1315px) {
+  header .lightened-area .findoutmorebutton .fombutton {
+    font-size: 2rem;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  header .lightened-area .findoutmorebutton .fombutton {
+    font-size: 1.8rem;
+    border-radius: 12px;
+    padding: 10px 25px;
+  }
+}
+header .lightened-area .findoutmorebutton .fombutton:hover {
+  background-color: black;
+}
+@media (max-width: 1315px) {
+  section {
+    width: 1315px;
+  }
+}
+@media (max-width: 1000px) {
+  section {
+    width: 1000px;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    width: 500px;
+    height: 450px;
+  }
 }
 section .pinkbar {
   background-color: #f6cfca;
-  width: 1920px;
+  width: 100%;
   height: 120px;
   border-left: 1px solid #707070;
   border-right: 1px solid #707070;
 }
+@media (max-width: 1315px) {
+  section .pinkbar {
+    height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  section .pinkbar {
+    height: 60px;
+  }
+}
 section .content {
-  width: 1920px;
+  width: 100%;
   height: 934px;
   background-color: #eceae0;
   display: flex;
 }
+@media (max-width: 1315px) {
+  section .content {
+    height: 600px;
+  }
+}
+@media (max-width: 1000px) {
+  section .content {
+    height: 500px;
+  }
+}
+@media (max-width: 500px) {
+  section .content {
+    width: 500px;
+    height: 500px;
+  }
+}
 section .content .handsimg {
-  background-color: #eceae0;
-  margin-top: 95px;
-  margin-left: 123px;
+  width: 791.5px;
+  height: 868px;
+  margin-top: 65px;
+  margin-left: 6.5%;
+}
+@media (max-width: 1315px) {
+  section .content .handsimg {
+    width: 500px;
+    height: 550px;
+    margin-top: 45px;
+  }
+}
+@media (max-width: 1000px) {
+  section .content .handsimg {
+    width: 400px;
+    height: 450px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  section .content .handsimg {
+    width: 220px;
+    height: 230px;
+    margin-top: 90px;
+  }
+}
+section .content .handsimg img {
+  width: 100%;
+  height: 100%;
 }
 section .content .contentinside {
-  width: 822px;
+  width: 43%;
   height: 677px;
-  font-size: 36px;
-  margin-top: 112px;
-  margin-left: 140px;
+  font-size: 3.6rem;
+  margin-top: 6%;
+  margin-left: 8%;
   line-height: 44px;
+}
+@media (max-width: 1315px) {
+  section .content .contentinside {
+    height: 500px;
+    font-size: 2rem;
+    line-height: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  section .content .contentinside {
+    height: 450px;
+    font-size: 2rem;
+    line-height: 25px;
+  }
+}
+@media (max-width: 500px) {
+  section .content .contentinside {
+    height: 400px;
+    font-size: 1.4rem;
+    line-height: 15px;
+    margin-top: 40px;
+    height: 350px;
+    margin-left: 20px;
+  }
 }
 section .content .contentinside h3 {
   font-weight: bold;
@@ -267,7 +609,20 @@ section .content .contentinside h4 {
 }
 section .content .contentinside .bktbutton {
   margin-top: 130px;
-  margin-left: 350px;
+  text-align: right;
+  margin-right: 15%;
+}
+@media (max-width: 1315px) {
+  section .content .contentinside .bktbutton {
+    margin-top: 5%;
+    margin-right: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  section .content .contentinside .bktbutton {
+    margin-right: 25%;
+    margin-top: 3%;
+  }
 }
 section .content .contentinside .bktbutton .bekindtodaybutton {
   border-radius: 25px;
@@ -275,6 +630,31 @@ section .content .contentinside .bktbutton .bekindtodaybutton {
   background-color: #dccab0;
   text-align: center;
   padding: 10px 39px;
+  font-size: 3.5rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+@media (max-width: 1315px) {
+  section .content .contentinside .bktbutton .bekindtodaybutton {
+    font-size: 2rem;
+    padding: 5px 30px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  section .content .contentinside .bktbutton .bekindtodaybutton {
+    font-size: 1.8rem;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 500px) {
+  section .content .contentinside .bktbutton .bekindtodaybutton {
+    margin-top: 20px;
+    padding: 7px 20px;
+  }
+}
+section .content .contentinside .bktbutton .bekindtodaybutton:hover {
+  background-color: black;
 }
 section .content .contentinside .bktbutton a {
   text-decoration: none;
@@ -282,16 +662,51 @@ section .content .contentinside .bktbutton a {
   font-weight: bold;
 }
 footer {
-  width: 1920px;
+  width: 100%;
   height: 113px;
   background-color: #f6cfca;
   border-left: 1px solid #707070;
   border-right: 1px solid #707070;
   border-bottom: 1px solid #707070;
 }
+@media (max-width: 1315px) {
+  footer {
+    width: 1315px;
+    height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    height: 60px;
+    width: 1000px;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    width: 500px;
+    height: 120px;
+  }
+}
 footer p {
   text-align: center;
   color: #707070;
   font-size: 20px;
   padding-top: 50px;
+}
+@media (max-width: 1315px) {
+  footer p {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  footer p {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  footer p {
+    font-size: 1rem;
+    padding-top: 80px;
+  }
 }
