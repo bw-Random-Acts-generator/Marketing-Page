@@ -1,0 +1,255 @@
+header {
+    width: 100%;
+    height: 1056px;
+    background: linear-gradient( rgba(239, 237, 228, 0.38), rgba(239, 237, 228, 0.38) ), url(../img/kindness.jpg);
+
+    @media @screen1315 {
+        width:1315px;
+        height: 723px;
+        background-size: contain;
+    }
+    @media @screen1000 {
+        width:1000px;
+        height: 550px;
+        background-size: contain;
+    }
+    @media @mobile {
+        width: 500px;
+        height: 270px;
+    }
+    .pinkbar {
+        @media @screen1315 {
+            width:1315px;
+        }
+        @media @screen1000 {
+            width: 1000px;
+        }
+        @media @mobile {
+            width:500px;
+            height: 15%;
+            background-color: #f6cfca;
+            padding-bottom:10%;
+        }
+    }
+    
+    .titlearea {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        padding-top: 38px;
+
+        .title {
+            width: 100%;
+            font-size: 5rem;
+            font-weight: 900;
+            line-height: 1.22;
+            color: #000000;
+            text-align: center;
+            padding-left: 18.2%;
+
+            @media @screen1315 {
+                font-size: 4rem;
+            }
+            @media @screen1000 {
+                font-size: 3.5rem;
+            }
+            @media @mobile {
+                text-align: center;
+                font-size: 2.5rem;
+                margin-top: -80px;
+                padding-right: 40px;
+                margin-left: -25px;
+            }
+        }
+
+        .signinbutton {
+            .button-style();
+            background-color: #8e8d8a;
+            color: #ffffff;
+            margin-right: 9.5px;
+            margin-top: 5px;
+
+            @media @screen1315 {
+                .buttonat1315();
+            }
+            @media @screen1000 {
+                .buttonat1000();
+            }
+            @media @mobile {
+                display: none;
+            }
+        }
+        .signinbutton:hover {
+            background-color: black;
+        }
+
+        .signupbutton {
+            .button-style();
+            background-color: #dccab0;
+            color: #707070;
+            margin-left: 9.5px;
+            margin-right: 51px;
+            margin-top: 5px;
+
+            @media @screen1315 {
+                .buttonat1315()
+            }
+            @media @screen1000 {
+                .buttonat1000();
+                margin-right: 20px;
+            }
+            @media @mobile {
+                display: none;
+            }
+        }
+        .signupbutton:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+    
+    nav {
+        text-align: center;
+        font-size: 30px;
+        height: 37px;
+        margin-top: -15px;
+
+        @media @screen1315 {
+            font-size: 2rem;
+            margin-left: -5%;
+        }
+        @media @screen1000 {
+            font-size: 1.6rem;
+            margin-top: 1px;
+            margin-left: -35px;
+        }
+        @media @mobile {
+            font-size: 1rem;
+            margin-top: -48px;
+        }
+        
+        
+        a {
+            text-decoration: none;
+            color: #000000;
+            margin-left: 55px;
+            margin-right: 55px;
+
+            @media @screen1000 {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    .lightened-area {
+        width: 95.3%;
+        height: 413px;
+        background-color: rgba(255, 255, 255, 0.47);
+        margin-top: 390px;
+
+        @media @screen1315 {
+            height:300px;
+            width:95%;
+            margin-top: 250px;
+        }
+        @media @screen1000 {
+            height: 40%;
+            margin-top: 150px;
+        }
+        @media @mobile {
+            height: 100px;
+            width: 93%;
+            margin-top: 10%;
+            padding-top: 100px;
+        }
+
+        .intro {
+            width: 85%;
+            height: 150px;
+            font-size: 50px;
+            margin-top: 150px;
+            margin-left: 210px;
+            font-weight: 600;
+            text-align: left;
+            line-height: 60px;
+            padding-top: 150px;
+
+            @media @screen1315 {
+                width: 75%;
+                height: 100px;
+                font-size: 3rem;
+                margin-top: 100px;
+                line-height: 40px;
+                margin-left: 200px;
+                padding-top: 100px;
+            }
+            @media @screen1000 {
+                font-size: 2.5rem;
+                margin-top: 75px;
+                margin-left: 150px;
+                line-height: 35px;
+                width: 83%;
+                
+            }
+            @media @mobile {
+                width: 90%;
+                height: 40px;
+                font-size: 1.3rem;
+                line-height: 15px;
+                margin-top:-65px;
+                margin-left: 40px;
+                padding-top: 0px;
+            }
+        }
+
+        .findoutmorebutton {
+            text-align: right;
+            margin-top: 20px;
+            padding-right: 3%;
+            padding-top: 100px;
+            @media @screen1315 {
+                margin-left: 1000px;
+                margin-top: 10px;
+            }
+            @media @screen1000 {
+                margin-left: 700px;
+                margin-top: -40px;
+
+            }
+            @media @mobile {
+                display: none;
+            }
+            
+
+            .fombutton {
+                padding: 15px 30px;
+                text-decoration: none;
+                background-color: #dccab0;
+                border-radius: 25px;
+                font-size: 3rem;
+                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.62);
+                font-weight: bold;
+                color: #ffffff;
+                display: inline-block;
+                white-space: nowrap;
+
+                @media @screen1315 {
+                    font-size: 2rem;
+                    border-radius: 20px;
+                    
+                }
+                @media @screen1000 {
+                    font-size: 1.8rem;
+                    border-radius: 12px;
+                    padding: 10px 25px;
+                }
+            }
+            .fombutton:hover {
+                background-color: black;
+            }
+        }
+
+        
+    }
+}
